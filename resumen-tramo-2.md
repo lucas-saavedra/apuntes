@@ -50,27 +50,18 @@ JavaScript:
    boton.addEventListener("click", function() {
      console.log("Se hizo clic en el botón");
    });
-let variable = 10;
-funcion test () {
-	let variable = 50;
-}
-test()
-console.log(variable) // variable => 10
-```
 
 7. Asincronía: JavaScript admite operaciones asíncronas, como hacer solicitudes HTTP o esperar temporizadores. Puedes utilizar callbacks, promesas o async/await para manejar la asincronía de manera efectiva y evitar bloquear la ejecución del programa.
 
 8. Scope y Closures: JavaScript utiliza scope para determinar la accesibilidad de las variables. Las variables pueden tener alcance global o estar limitadas al alcance de una función o bloque. Los closures son funciones que tienen acceso a variables de su entorno de declaración incluso después de que la función haya finalizado.
 
 ## Bootstrap
-
 Es un framework de desarrollo web front-end que proporciona una biblioteca de componentes y estilos predefinidos. Aquí tienes detalles sobre algunas de las clases más utilizadas en Bootstrap:
 
 1. Grid System:
    - `.container`: Crea un contenedor con margen lateral automático y un ancho máximo.
    - `.row`: Crea una fila para alinear las columnas.
    - `.col-*`: Define columnas en una fila. Puedes usar `col-`, `col-sm-`, `col-md-`, `col-lg-`, `col-xl-` seguido de un número del 1 al 12 para especificar el ancho de la columna en diferentes tamaños de pantalla.
-
 
 2. Tipografía:
    - `.h1`, `.h2`, `.h3`, `.h4`, `.h5`, `.h6`: Establecen tamaños de encabezado.
@@ -82,19 +73,19 @@ Es un framework de desarrollo web front-end que proporciona una biblioteca de co
    - `.btn-*`: Aplica estilos predefinidos a los botones. Puedes usar `btn-primary`, `btn-secondary`, `btn-success`, `btn-danger`, `btn-info`, `btn-warning`, `btn-light`, `btn-dark` y `btn-link`.
    - `.btn-outline-*`: Crea botones con bordes y texto transparentes. Los mismos estilos están disponibles como en `.btn-*`.
 
-4. Formularios:
+1. Formularios:
    - `.form-group`: Envuelve un grupo de elementos de formulario.
    - `.form-control`: Estiliza elementos de formulario como `<input>`, `<textarea>`, `<select>` y `<button>`.
    - `.form-check`: Estiliza los elementos de formulario para casillas de verificación y botones de opción.
    - `.form-text`: Agrega texto de ayuda a los elementos de formulario.
 
-5. Componentes:
+2. Componentes:
    - `.navbar`: Crea una barra de navegación.
    - `.card`: Crea una tarjeta con un contenedor para contenido.
    - `.alert`: Crea una alerta para mostrar mensajes.
    - `.modal`: Crea un diálogo modal.
 
-6. Utilidades:
+3. Utilidades:
    - `.d-*`: Controla la visualización y el comportamiento de los elementos en diferentes tamaños de pantalla. Puedes usar `d-none`, `d-block`, `d-inline`, `d-flex`, `d-grid` y más.
    - `.bg-*`: Cambia el color de fondo. Puedes usar `bg-primary`, `bg-secondary`, `bg-success`, `bg-danger`, `bg-info`, `bg-warning`, `bg-light` y `bg-dark`.
    - `.text-*`: Cambia el color de texto. Puedes usar `text-white`, `text-muted`, `text-primary`, `text-success`, `text-danger`, `text-info`, `text-warning` y `text-dark`.
@@ -194,5 +185,3 @@ PostgreSQL es un sistema de gestión de bases de datos relacionales de código a
 6. Consultas SQL: Para interactuar con bases de datos relacionales, se utiliza SQL (Structured Query Language). Con SQL, se pueden realizar consultas para recuperar, insertar, actualizar y eliminar datos de las tablas.
 
 El diagrama ER es una herramienta visual que se utiliza en la fase de diseño para modelar las entidades y sus relaciones. A partir del diagrama ER, se implementa el modelo relacional mediante la creación de tablas y la definición de las relaciones en la base de datos.
-
-
