@@ -5,10 +5,9 @@ JavaScript:
 - Conoce las características de JavaScript moderno, como promesas, async/await y arrow functions.
 - Practica la resolución de problemas y la depuración de código.
 
-
 1. Variables: En JavaScript, las variables se utilizan para almacenar datos. Puedes declarar una variable usando las palabras clave `var`, `let` o `const`. Por ejemplo:
    ```javascript
-   var nombre = "Juan";
+   let nombre = "Juan";
    let edad = 25;
    const PI = 3.14;
    ```
@@ -19,6 +18,10 @@ JavaScript:
    ```javascript
    function saludar(nombre) {
      console.log("Hola, " + nombre);
+   }
+   const saludar(nombre)=>
+   {
+	   console.log("Hola, " + nombre)
    }
    saludar("Juan"); // Imprime: "Hola, Juan"
    ```
@@ -47,7 +50,13 @@ JavaScript:
    boton.addEventListener("click", function() {
      console.log("Se hizo clic en el botón");
    });
-   ```
+let variable = 10;
+funcion test () {
+	let variable = 50;
+}
+test()
+console.log(variable) // variable => 10
+```
 
 7. Asincronía: JavaScript admite operaciones asíncronas, como hacer solicitudes HTTP o esperar temporizadores. Puedes utilizar callbacks, promesas o async/await para manejar la asincronía de manera efectiva y evitar bloquear la ejecución del programa.
 
@@ -61,6 +70,7 @@ Es un framework de desarrollo web front-end que proporciona una biblioteca de co
    - `.container`: Crea un contenedor con margen lateral automático y un ancho máximo.
    - `.row`: Crea una fila para alinear las columnas.
    - `.col-*`: Define columnas en una fila. Puedes usar `col-`, `col-sm-`, `col-md-`, `col-lg-`, `col-xl-` seguido de un número del 1 al 12 para especificar el ancho de la columna en diferentes tamaños de pantalla.
+
 
 2. Tipografía:
    - `.h1`, `.h2`, `.h3`, `.h4`, `.h5`, `.h6`: Establecen tamaños de encabezado.
@@ -158,5 +168,31 @@ PostgreSQL es un sistema de gestión de bases de datos relacionales de código a
 - Triggers (disparadores), que permiten ejecutar código automáticamente en respuesta a eventos en una tabla.
 - Vistas, que son consultas predefinidas almacenadas como tablas virtuales.
 - Funciones almacenadas, que son bloques de código reutilizable que pueden tomar argumentos y devolver resultados.
+
+## Diagrama Entidad-Relación (ER):
+1. Entidades: Representan objetos o conceptos del mundo real, como una persona, un producto o una transacción. Se representan mediante rectángulos en el diagrama ER.
+
+2. Atributos: Son características o propiedades de una entidad. Por ejemplo, una entidad "Persona" puede tener atributos como "nombre", "edad" y "dirección".
+
+3. Relaciones: Representan las interacciones entre entidades. Pueden ser uno a uno, uno a muchos o muchos a muchos. Se representan mediante líneas que conectan las entidades en el diagrama ER.
+
+4. Cardinalidad: Indica cuántas instancias de una entidad pueden estar relacionadas con una instancia de otra entidad. Por ejemplo, una persona puede tener una relación de "uno a muchos" con las transacciones, lo que significa que una persona puede realizar varias transacciones.
+
+5. Clave primaria: Es un atributo o conjunto de atributos que identifica de manera única a una instancia de una entidad. Cada entidad debe tener una clave primaria que la distinga de las demás.
+
+## Modelo Relacional:
+1. Tablas: En el modelo relacional, los datos se organizan en tablas. Cada tabla representa una entidad y las filas de la tabla son las instancias individuales de esa entidad.
+
+2. Columnas: Las columnas de una tabla representan los atributos de la entidad. Cada columna tiene un nombre único y un tipo de datos asociado, como texto, número o fecha.
+
+3. Clave primaria: En el modelo relacional, se define una clave primaria en una tabla para identificar de manera única cada fila. La clave primaria puede ser un solo atributo o una combinación de varios atributos.
+
+4. Relaciones: En el modelo relacional, las relaciones se establecen a través de claves primarias y claves foráneas. Una clave foránea en una tabla hace referencia a la clave primaria de otra tabla para establecer una relación entre ellas.
+
+5. Normalización: La normalización es el proceso de diseñar tablas de base de datos de manera eficiente y libre de redundancias. Se utilizan reglas de normalización para dividir las tablas en estructuras más pequeñas y más coherentes.
+
+6. Consultas SQL: Para interactuar con bases de datos relacionales, se utiliza SQL (Structured Query Language). Con SQL, se pueden realizar consultas para recuperar, insertar, actualizar y eliminar datos de las tablas.
+
+El diagrama ER es una herramienta visual que se utiliza en la fase de diseño para modelar las entidades y sus relaciones. A partir del diagrama ER, se implementa el modelo relacional mediante la creación de tablas y la definición de las relaciones en la base de datos.
 
 
